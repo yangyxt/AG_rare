@@ -23,6 +23,10 @@ AlphaGenome predicts multimodal genomic features (e.g., RNA expression, chromati
   ```
   pip install pandas pysam alphagenome CrossMap matplotlib numpy
   ```
+  or
+  ```
+  conda create -n ag_rare && conda activate ag_rare && conda install pandas pysam alphagenome CrossMap matplotlib numpy
+  ```
 - For liftover: Download hg19ToHg38 chain file (`wget http://hgdownload.soe.ucsc.edu/goldenPath/hg19/liftOver/hg19ToHg38.over.chain.gz`) and hg38 FASTA (`wget http://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz` and unzip).
 - AlphaGenome API key (register at https://deepmind.google/technologies/alphagenome/).
 
