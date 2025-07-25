@@ -69,10 +69,10 @@ python main.py hg19 rare.vcf unfiltered.vcf UBERON:0001157 UBERON:0001114 --api_
 ## Scripts Overview
 
 - `main.py`: Orchestrates the full pipeline via function imports.
-- `liftover.py`: Lifts over VCFs from hg19/GRCh37 to hg38 using CrossMap.
-- `vcf_process.py`: Parses VCFs, clusters rare variants into 1M bp intervals, extracts all variants within them.
-- `api_process.py`: Calls AlphaGenome API for variant predictions, saves results.
-- `post_process.py`: Loads results, computes mean absolute differences as effect scores, filters, and visualizes tracks using AlphaGenome's plotting tools.
+- `crossmap_liftover.py`: Lifts over VCFs from hg19/GRCh37 to hg38 using CrossMap.
+- `load_interval_variants.py`: Parses VCFs, clusters rare variants into 1M bp intervals, extracts all variants within them.
+- `AG_connect.py`: Calls AlphaGenome API for variant predictions, saves results.
+- `vis_AG_results.py`: Loads results, computes mean absolute differences as effect scores, filters, and visualizes tracks using AlphaGenome's plotting tools.
 
 ## Ontology Terms
 
